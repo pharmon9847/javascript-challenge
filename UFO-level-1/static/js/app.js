@@ -1,5 +1,3 @@
-// alert("Welcome!")
-
 // Starter Code
 var tableData = data;
 
@@ -38,13 +36,6 @@ button.on("click", () => {
 
     var inputDate = inputFieldDate.property("value").trim();
     // console.log(inputDate)
-    // https://www.w3schools.com/jsref/jsref_tolowercase.asp
-    // var inputCity = inputFieldCity.property("value").toLowerCase().trim();
-    // console.log(inputCity)
-    // var inputState = inputFieldState.property("value").toLowerCase().trim();
-    // var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
-    // var inputShape = inputFieldShape.property("value").toLowerCase().trim();
-
 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
 
@@ -62,6 +53,6 @@ button.on("click", () => {
 
     // Top if only works for filtering the date
     else {
-        $tbody.append("tr").append("td").text("No Little Green Men Here! Try A New Search: ");
+        $tbody.append("tr").append("td").text("No Little Green Men Here! Keep Searching: ");
     }
 })
